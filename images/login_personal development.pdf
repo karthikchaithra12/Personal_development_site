@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./stylesp.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>login/personal development</title>
+    
+    <style>
+        .g{
+            font-family: Itim;
+            width: 5000px;
+            text-align: left;
+            text-shadow: 2px 2px #325148;
+            margin-left: -100px;
+            margin-top: -50px;
+        }
+        nav{
+            font-family: Inter;
+            font-weight: 400;
+        }
+        
+        #sub{
+            font-family: Itim;
+        }
+        .buttons{
+            color: #325148;
+        }
+        .button a:hover{
+        color:#ff8c45;
+        transition:all 0.4s ease 0s;
+        }
+        .b1{
+            font-size: 20px;
+           
+            margin: 10px;
+            margin: 10px;
+            width: 300px;
+            height: 25px;
+            margin-left: 800px;
+            margin-top: 180px;
+        }
+        .b2{
+            font-size: 25px;
+            background-color: #dbd8d9;
+            border: 3px solid #325148;
+            border-radius: 25px;
+            padding: 5px;
+            margin: 10px;
+            width: 200px;
+            height: 35px;
+            margin-top: 0px;
+            margin-left: 810px;
+        }
+        .pg{
+            margin-top: 15px;
+            color: #325148;
+        }
+        .outputjs{
+            width:600px;
+        }
+        .btn1{
+            width: 100px;
+            margin-left: 100px;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Itim&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <nav>
+        <div class="main">
+           <img src="./images/companylogo.jpg">
+            <p>Varcons Technologies</p>
+          </div>
+            <ul>
+            
+           
+              
+            </ul>
+      </nav>
+      <div class="content-items">
+          <div class="body">
+            
+            <h1 class="g">PERSONAL DEVELOPMENT</h1>
+            <div class="outputjs">
+                <p id="sub">Relax Recreate and Reshape your mind and take yourself to your next level...</p>
+                
+            </div>
+           <div class="buttons">
+            <p class="b1">&nbsp;&nbsp; Dont have an account?</a></p>
+            <p class="b2"><a href="./signup.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SIGN UP</a></p>
+            </div> 
+           </div>
+        </div>
+        <div class="log">
+            <form action="action_page.php" method="post">
+                <div class="imgcontainer">
+                    <i class="fa-solid fa-user fa-beat fa-2xl"></i>
+                  </div>
+                
+                  <div class="container" >
+                    <div class="input-field" id="nameField">
+                        <label for="uname" ><b>E-Mail</b></label>
+                        <input type="text" placeholder="Enter E-Mail" name="uname" required class="E-Mail">
+                    </div>
+                    <div class="input-field">
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    </div>
+                    <button type="submit" id="loginbtn" style="border-radius: 25px;">Login</button>
+                    <label>
+                      <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                  </div>
+                
+                  <div class="container" style="background-color:#1a5a56">
+                    <button type="button" class="cancelbtn" style="border-radius: 25px;"><a href="./opening.html">Cancel</a></button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                  </div>
+            </form>
+        </div>
+        <footer class="pg">
+            <p class="em">E-Mail:Varconstechnologies@gmail.com</p>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-facebook"></a>
+        </footer>
+        
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
